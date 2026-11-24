@@ -14,7 +14,11 @@ def search_name(names, name):
 # Written by: Kawthar (task 3)
 def sort_names(names):
     return sorted(names)
-    
+
+# Written by: Noura (task 4)
+def names_starting_with(names, letter):
+    return [name for name in names if name.lower().startswith(letter.lower())
+            
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
@@ -22,4 +26,9 @@ def main():
     print("Number of names:", count_names(names))
 ‏    print("Search Sara:", search_name(names, "Sara"))
     print("Sorted names:", sort_names(names))
+    print("Names starting with L:", names_starting_with(names, "L"))
+
+
+
+
 main()
