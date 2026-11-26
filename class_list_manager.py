@@ -18,7 +18,14 @@ def sort_names(names):
 # Written by: Noura (task 4)
 def names_starting_with(names, letter):
     return [name for name in names if name.lower().startswith(letter.lower())
-            
+
+# Written by: Joury (task 6)
+def to_upper(names):
+    result = []
+    for name in names:
+        result.append(name.upper())
+    return result
+    
 def main():
     print("Welcome to the Class List Manager!")
     print("Class list:", names)
@@ -27,6 +34,8 @@ def main():
 ‏    print("Search Sara:", search_name(names, "Sara"))
     print("Sorted names:", sort_names(names))
     print("Names starting with L:", names_starting_with(names, "L"))
+    print("Uppercase names:", to_upper(names))
+
 
 
 
