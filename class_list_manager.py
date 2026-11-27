@@ -17,7 +17,7 @@ def sort_names(names):
 
 # Written by: Noura (task 4)
 def names_starting_with(names, letter):
-    return [name for name in names if name.lower().startswith(letter.lower())
+    return [name for name in names if name.lower().startswith(letter.lower())]
 
 # Written by: Joury (task 6)
 def to_upper(names):
